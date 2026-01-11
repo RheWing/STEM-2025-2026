@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>STEM CSL</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar d-none d-xl-block w-100">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="" class="text-muted me-4"><i class="fas fa-map-marker-alt text-secondary me-2"></i>CLB STEM CSL</a>
+                        <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-secondary me-2"></i>+84363457216</a>
+                        <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-secondary me-2"></i>daothevinh2009sl@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                         
+                        <a href="https://www.facebook.com/aovinh.962989" class="btn btn-primary btn-square border border-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        
+                        <a href="" class="btn btn-primary btn-square border border-white me-3"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid sticky-top px-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light py-3 px-4">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="text-secondary display-6"><i class="fas fa-city text-primary me-3"></i>STEM 2025-2026</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+                        <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
+                        <a href="about.html" class="nav-item nav-link">Thành viên</a>
+                       
+                        <a href="tintuc.html" class="nav-item nav-link">Tin tuyển sinh</a>
+                        <div class="nav-item dropdown">
+                             
+                             
+                        </div>
+                        <a href="huongdan.html" class="nav-item nav-link">Thông tin</a>
+                    </div>
+                    <div class="d-flex align-items-center flex-nowrap pt-3  pt-lg-0 ms-lg-2">
+                        <button class="btn btn-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                              </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Tìm kiếm tại đây</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid overflow-hidden px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1s" style="animation-delay: 1s;">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="https://apiwebhmu.hmu.edu.vn/Upload/Images/327c6c90-174c-4eca-b12c-73163ab76f07.png" class="img-fluid w-100" alt="First slide"/>
+                        <div class="carousel-caption">
+                            <p class="text-uppercase text-secondary fs-4 mb-0 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1s" style="animation-delay: 1s;"></p>
+                            <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">Thông tin tuyển sinh</h1>
+                            <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.5s;">dưới đây là thông tin tuyển sinh của một số trường đại học  
+                            </p>
+                             
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipMYYdlWSq3YX0uqmkpGCW2gLdruEuXM6m8pUJqT=s1360-w1360-h1020-rw" class="img-fluid w-100" alt="Second slide"/>
+                        <div class="carousel-caption">
+                            <p class="text-uppercase text-secondary fs-4 mb-0 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1s" style="animation-delay: 1s;"></p>
+                            <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;"> Bảo Đảm </h1>
+                            <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.5s;">thông tin tuyển sinh chính thức năm 2026 
+                            </p>
+                             
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://bcp.cdnchinhphu.vn/334894974524682240/2022/12/5/dhbkhn-6920-1658994052-1-16702134834751920701721.jpg" class="img-fluid w-100" alt="Third slide"/>
+                        <div class="carousel-caption">
+                            <p class="text-uppercase text-secondary fs-4 mb-0 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1s" style="animation-delay: 1s;"></p>
+                            <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">Tin Chuẩn </h1>
+                            <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.5s;">Cập nhập nhanh chóng 
+                            </p>
+                             
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon btn-lg-square fadeInLeft animate__animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"><i class="fas fa-chevron-left fa-2x"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon btn-lg-square fadeInRight animate__animated" aria-hidden="true" data-animation="fadeInRight" data-delay="1.1s" style="animation-delay: 1.3s;"><i class="fas fa-chevron-right fa-2x"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="about-item-image d-flex">
+                            <img src="https://cdnphoto.dantri.com.vn/kbb1DKi5Gq3dfTO0Rvgp68k9YJA=/thumb_w/1920/2023/06/28/thi-tot-nghiep-thpt8-1687948871151.jpg" class="img-1 img-fluid w-50"  alt="">
+                            <img src="https://cdnphoto.dantri.com.vn/Qb_wsfyJYlwxM7ngMtixGN3q0tM=/thumb_w/1920/2023/06/28/thi-tot-nghiep-thpt15-1687948871585.jpg" class="img-2 img-fluid w-50"  alt="">
+                            <div class="about-item-image-content">
+                                <img src="https://tuyensinh.lhu.edu.vn/Data/Folders/643/images/2025_03_27_dai_hoc_02.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.1s">
+                        <div class="about-item-content">
+                            
+                            <h2 class="display-4 text-capitalize mb-3">TÌM KIẾM THÔNG TIN TUYỂN SINH DỄ DÀNG TẠI ĐÂY</h2>
+                            <p class="mb-4 fs-5">Thông tin tuyển sinh đóng vai trò quan trọng trong việc giúp thí sinh xác định nguyện vọng, lựa chọn ngành học phù hợp và chuẩn bị đầy đủ các điều kiện cần thiết để tham gia xét tuyển. Nó cũng cung cấp cái nhìn tổng quan về yêu cầu đầu vào, cơ hội nghề nghiệp sau khi tốt nghiệp và định hướng phát triển trong tương lai. 
+                            </p>
+                             
+                            <div class="row gy-0 gx-4 justify-content-between pb-4">
+                                <div class="col-lg-6">
+                                    <p class="text-dark"><i class="fas fa-check text-secondary me-1"></i> 100% Đầy đủ</p>
+                                    <p class="text-dark"><i class="fas fa-check text-secondary me-1"></i> Đáng tin cậy</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="text-dark"><i class="fas fa-check text-secondary me-1"></i> Nguồn thông tin uy tín</p>
+                                    <p class="text-dark mb-0"><i class="fas fa-check text-secondary me-1"></i> Tuyệt vời</p>
+                                </div>
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Features Start -->
+      
+        <!-- Features End -->
+
+
+        <!-- Services Start -->
+        <div class="container-fluid service bg-light pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <p class="text-uppercase text-secondary fs-5 mb-0">Một số đề án tuyển sinh của các trường đại học</p>
+                    
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/vi/e/ef/Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_B%C3%A1ch_Khoa_H%C3%A0_N%E1%BB%99i.svg" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                    <i class="fas fa-home text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://ts.hust.edu.vn/p/dai-hoc" class="d-block fs-4 my-4">Đại Học Bách Khoa</a>
+                                <p class="text-white mb-4">Đại học Bách khoa là nhóm các trường đại học kỹ thuật hàng đầu tại Việt Nam, chuyên đào tạo các ngành về kỹ thuật, công nghệ, và khoa học ứng dụng</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://docs.google.com/document/d/1VYuDiKpn2EXqjmrJkX9Fn-9WgIyT9446/edit">Xem thêm</a>
+
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center ps-4 w-100">
+                                     
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Vietnam_National_University_Logo.svg" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                    <i class="fas fa-users-cog text-primary fa-4x"></i>
+                                </div>
+                                <a href=" https://tuyensinh.vnu.edu.vn/" class="d-block fs-4 my-4">Đại học Quốc Gia Hà Nội</a>
+                                <p class="text-white mb-4">Đại học Quốc gia Hà Nội (VNU) là trung tâm đào tạo, nghiên cứu hàng đầu Việt Nam, gồm nhiều trường đại học thành viên, trong đó có Trường Đại học Công nghệ chuyên về kỹ thuật và công nghệ. Đây là môi trường học thuật đẳng cấp với chương trình đào tạo đa ngành và liên kết quốc tế mạnh mẽ.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="http://nhom4.byethost14.com/nhom4hihi/index.html">Xem thêm</a>
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                     
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/vi/3/30/Logo-NEU.PNG" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                    <i class="fas fa-hospital-user text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://tuyensinh.neu.edu.vn/" class="d-block fs-4 my-4">Kinh tế quốc dân</a>
+                                <p class="text-white mb-4">Đại học Kinh tế Quốc dân (NEU) là một trong những trường đại học hàng đầu Việt Nam về đào tạo các ngành kinh tế, quản lý và kinh doanh. Trường nổi bật với chất lượng giảng dạy, nghiên cứu ứng dụng và có môi trường năng động, giúp sinh viên phát triển kỹ năng thực tiễn và khả năng lãnh đạo.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://drive.google.com/file/d/19djr2vkAsFVde1H-VQCVrSkhv0JJzEft/view?usp=sharing">Xem thêm</a>
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                     
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/vi/9/95/FTU%27s_logo.jpg" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 100px; height: 100px;">
+                                    <i class="fas fa-file-invoice-dollar text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://tuyensinh.ftu.edu.vn/" class="d-block fs-4 my-4">Đại Học Ngoại thương</a>
+                                <p class="text-white mb-4">​Đại học Ngoại thương (FTU) là một trong những trường đại học hàng đầu Việt Nam, chuyên đào tạo các lĩnh vực kinh tế, kinh doanh quốc tế và ngoại ngữ.!</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://drive.google.com/file/d/10QO7y-5iaC0EAW0lyZdUsIuA2l8H8UWU/view">Xem thêm</a>
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                   
+                                </div>
+                                                             </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://cdn.haitrieu.com/wp-content/uploads/2021/10/Logo-Dai-hoc-Su-pham-Ha-Noi-HNUE.png" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 100px; height: 100px;">
+                                    <i class="fas fa-cogs text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://tuyensinh.hnue.edu.vn" class="d-block fs-4 my-4">Sư Phạm Hà Nội</a>
+                                <p class="text-white mb-4">​Trường Đại học Sư phạm Hà Nội (HNUE), thành lập ngày 11 tháng 10 năm 1951, là cơ sở giáo dục đại học hàng đầu Việt Nam trong lĩnh vực đào tạo giáo viên và nghiên cứu khoa học giáo dục. Trường có vai trò quan trọng trong việc đào tạo và bồi dưỡng giáo viên, cán bộ quản lý giáo dục cho cả nước.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://tuyensinh.hnue.edu.vn/thong-bao/542">Xem thêm</a>
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                    
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://giaoduc247.vn/uploads/082021/images/yhanoi.jpeg" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 100px; height: 100px;">
+                                    <i class="fas fa-sitemap text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://tuyensinhso.vn/school/dai-hoc-y-ha-noi.html?utm_source=chatgpt.com" class="d-block fs-4 my-4">Y Hà Nội </a>
+                                <p class="text-white mb-4">​Trường Đại học Y Hà Nội (Hanoi Medical University - HMU) được thành lập năm 1902, là một trong những cơ sở đào tạo y khoa hàng đầu và lâu đời nhất tại Việt Nam. Trường chuyên đào tạo các chuyên gia y tế chất lượng cao và đóng góp quan trọng vào sự phát triển của ngành y tế quốc gia. </p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://hmu.edu.vn/tin-tuc/6cc77ebb-5fdb-4c94-b338-a5956f43e85c/thong-bao-to-hop-xet-tuyen-chi-tieu-va-phuong-thuc-xet-tuyen-tuyen-sinh-dai-hoc-nam-2025">Xem thêm</a>
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                     
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://bap.edu.vn/upload/images/LOGO%20bai%20%C4%91a%CC%86ng%20web7.png" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                    <i class="fas fa-home text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://ts.hust.edu.vn/p/dai-hoc" class="d-block fs-4 my-4">Học Viện Ngân Hàng</a>
+                                <p class="text-white mb-4">Học Việt Ngân Hàng là tổ chức đào tạo và nghiên cứu khoa học của Nhà nước về lĩnh vực ngân hàng.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://www.hvnh.edu.vn/hvnh/vi/thong-tin-tuyen-sinh/hoc-vien-ngan-hang-cong-bo-phuong-thuc-xet-tuyen-dai-hoc-chinh-quy-nam-2026-3537.html">Xem thêm</a>
+
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center ps-4 w-100">
+                                     
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Logo_haui_eng_RGB-01.png/2560px-Logo_haui_eng_RGB-01.png" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                    <i class="fas fa-home text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://ts.hust.edu.vn/p/dai-hoc" class="d-block fs-4 my-4">Đại Học Công Nghiệp Hà Nội</a>
+                                <p class="text-white mb-4">Đại Học Công Ngiệp Hà Nội là một đại học công lập, đa cấp, đa nghề, định hướng thực hành trực thuộc Bộ Công thương. Trường được nâng cấp lên đại học năm 2005 trên cơ sở Trường Cao đẳng Công nghiệp Hà Nội.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://tuyensinh.haui.edu.vn/dai-hoc-chinh-quy/dai-hoc-cong-nghiep-ha-noi-du-kien-mot-so-diem-moi-trong-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/695f6ce41a61cc3d3c86cb3a">Xem thêm</a>
+
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center ps-4 w-100">
+                                     
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/2/23/Logo_of_VNU_Hanoi-USSH.svg/1280px-Logo_of_VNU_Hanoi-USSH.svg.png" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                    <i class="fas fa-home text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://ts.hust.edu.vn/p/dai-hoc" class="d-block fs-4 my-4">Đại Học Khoa Học Xã hội Và Nhân Văn</a>
+                                <p class="text-white mb-4">Trường Đại học Khoa học Xã hội và Nhân văn (VNU-USSH) là một trường đại học của Đại học Quốc gia Hà Nội.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://ussh.vnu.edu.vn/vi/news/thong-bao/thong-bao-du-kien-phuong-an-tuyen-sinh-dai-hoc-chinh-quy-nam-2026-23760.html">Xem thêm</a>
+
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center ps-4 w-100">
+                                     
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/vi/0/0e/Logo_MTA_new.png" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                    <i class="fas fa-home text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://ts.hust.edu.vn/p/dai-hoc" class="d-block fs-4 my-4">Học Viện Kĩ Thuật Quân Sự</a>
+                                <p class="text-white mb-4">Học viện Kỹ thuật quân sự là Đại học đầu ngành kỹ thuật, công nghệ quân sự và công nghiệp quốc phòng nằm trong Nhóm các Đại học trọng điểm quốc gia Việt Nam đặt dưới sự lãnh đạo trực tiếp của Quân ủy Trung ương, Bộ Quốc phòng</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://mta.edu.vn/Tin-t%E1%BB%A9c/ArticleID/8597/Th%C3%B4ng-tin-tuy%E1%BB%83n-sinh-2025">Xem thêm</a>
+
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center ps-4 w-100">
+                                     
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/2/2d/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg/2560px-Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg.png" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                    <i class="fas fa-home text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://ts.hust.edu.vn/p/dai-hoc" class="d-block fs-4 my-4">Đại Học FPT</a>
+                                <p class="text-white mb-4">Trường Đại học FPT là trường đại học đào tạo về công nghệ nổi tiếng ở Việt Nam chính thức được công nhận xếp hạng quốc tế Ba Sao (***) theo chuẩn QS Stars - một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên toàn thế giới.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://daihoc.fpt.edu.vn/tin-noi-bat-muc-tin-tuc/quy-che-tuyen-sinh-2025/">Xem thêm</a>
+
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center ps-4 w-100">
+                                     
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/vi/8/85/Logo_hoc_vien_ANND.png" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                    <i class="fas fa-home text-primary fa-4x"></i>
+                                </div>
+                                <a href="https://ts.hust.edu.vn/p/dai-hoc" class="d-block fs-4 my-4">Học Viện An Ninh Nhân Dân</a>
+                                <p class="text-white mb-4">Học viện an ninh nhân dân có trách nhiệm đào tạo trình độ chuyên môn, nghiệp vụ và bồi dưỡng phẩm chất đạo đức, nhân cách của người cán bộ An ninh; nghiên cứu khoa học về An ninh nhân dân phục vụ cho yêu cầu phát triển kinh tế - xã hội.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="https://hvannd.edu.vn/bv/ct/16032/thong-bao-chi-tieu-tuyen-sinh-tuyen-moi-dao-tao-trinh-do-dai-hoc-nam-2025-tai-hoc-vien-an-ninh-nhan-dan">Xem thêm</a>
+
+                            </div>
+                            <div class="service-tytle">
+                                <div class="d-flex align-items-center ps-4 w-100">
+                                     
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="btn btn-secondary py-3 px-5 mt-4" href="https://thi.tuyensinh247.com/danh-sach-truong-cong-bo-de-an-tuyen-sinh-2025-moi-nhat-c24a83942.html#:~:text=%C4%90%E1%BA%BFn%20ng%C3%A0y%2024%2F3%20%C4%91%C3%A3%20c%C3%B3%20149%20tr%C6%B0%E1%BB%9Dng%20c%C3%B4ng,th%C3%B4ng%20tin%20%C4%91%E1%BB%81%20%C3%A1n%20tuy%E1%BB%83n%20sinh%20c%E1%BB%A7a%20tr%C6%B0%E1%BB%9Dng">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <!-- Fact Counter -->
+        <div class="container-fluid counter py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="counter-box">
+                            <div class="counter-item">
+                                <div class="counter-item-style"></div>
+                                <div class="counter-item-inner p-5">
+                                    <i class="fas fa-thumbs-up fa-4x text-secondary"></i>
+                                    <h4 class="text-dark my-4">số trường đại học tại VN</h4>
+                                    <div class="counter-counting">
+                                        <span class="text-secondary fs-2 fw-bold" data-toggle="counter-up">400</span>
+                                        <span class="h1 fw-bold text-secondary">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="counter-box">
+                            <div class="counter-item">
+                                <div class="counter-item-style"></div>
+                                <div class="counter-item-inner p-5">
+                                    <i class="fas fa-users fa-4x text-secondary"></i>
+                                    <h4 class="text-dark my-4">số ngành đại học ước tính</h4>
+                                    <div class="counter-counting">
+                                        <span class="text-secondary fs-2 fw-bold" data-toggle="counter-up">470</span>
+                                        <span class="h1 fw-bold text-secondary">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="counter-box">
+                            <div class="counter-item">
+                                <div class="counter-item-style"></div>
+                                <div class="counter-item-inner p-5">
+                                    <i class="fas fa-user fa-4x text-secondary"></i>
+                                    <h4 class="text-dark my-4">nguyện vọng đại học trung bình mỗi người</h4>
+                                    <div class="counter-counting">
+                                        <span class="text-secondary fs-2 fw-bold" data-toggle="counter-up">15</span>
+                                        <span class="h1 fw-bold text-secondary">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="counter-box">
+                            <div class="counter-item">
+                                <div class="counter-item-style"></div>
+                                <div class="counter-item-inner p-5">
+                                    <i class="fas fa-heart fa-4x text-secondary"></i>
+                                    <h4 class="text-dark my-4">tỉ lệ có việc làm ổn định sau khi học xong đại học</h4>
+                                    <div class="counter-counting">
+                                        <span class="text-secondary fs-2 fw-bold" data-toggle="counter-up">95</span>
+                                        <span class="h1 fw-bold text-secondary">%+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center pt-4 wow fadeInUp" data-wow-delay="0.9s">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact Counter -->
+
+        <!-- Projects Start -->
+         
+        <!-- Projects End -->
+
+        <!-- Blog Start -->
+       
+        <!-- Blog End -->
+
+        <!-- Testimonial Start -->
+       <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <p class="text-uppercase text-secondary fs-5 mb-0">Trang thông tin tuyển sinh đại học 2026</p>
+                    <h2 class="display-4 text-capitalize mb-3">ĐÁNH GIÁ</h2>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="testimonial-item bg-light p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">Trang web các bạn rất thú vị, cung cấp cho mình rất nhiều thông tin
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="me-4">
+                                    <img src="img/testimonial-1.jpg" class="img-fluid w-100" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="d-block">
+                                    <h4 class="text-dark">Nguyễn Thị Minh Hiền</h4>
+                                    <p class="m-0 pb-3">Trường THPT chuyên Bắc Giang</p>
+                                    <div class="d-flex text-secondary pe-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">Đúng trang web mình đang cần cảm ơn các bạn nhé
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="me-4">
+                                    <img src="img/testimonial-2.jpg" class="img-fluid w-100" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="d-block">
+                                    <h4 class="text-dark">Chin Chin</h4>
+                                    <p class="m-0 pb-3">Trường Phổ thông Vùng cao Việt Bắc</p>
+                                    <div class="d-flex text-secondary pe-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">Các bạn nên thêm các trường ở miền Nam nhaa
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="me-4">
+                                    <img src="img/testimonial-3.jpg" class="img-fluid w-100" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="d-block">
+                                    <h4 class="text-dark">Hoàng Thu Hà</h4>
+                                    <p class="m-0 pb-3">Trường THPT Nguyễn Khuyến</p>
+                                    <div class="d-flex text-secondary pe-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+   <div class="testimonial-item bg-light p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">10 điểm cho các bạn, giỏi quáaaaa
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="me-4">
+                                    <img src="img/testimonial-2.jpg" class="img-fluid w-100" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="d-block">
+                                    <h4 class="text-dark">Củ Hành</h4>
+                                    <p class="m-0 pb-3">Trường THPT Sông Mã</p>
+                                    <div class="d-flex text-secondary pe-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+           <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h4 class="text-white mb-4">Trang thông tin cung cấp thông tin tuyển sinh từ Bộ GD & ĐT và các trường ĐH - CĐ trên cả nước. </h4>      
+                                <div class="position-relative mx-auto">
+                                    <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Đóng góp ý kiến">
+                                    <button type="button" class="btn btn-secondary position-absolute top-0 end-0 py-2 mt-2 me-2">Gửi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Khám phá</h4>
+                            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Trang chủ</a>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> Thành viên</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Đại học</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Thông tin liên lạc</h4>
+                            <a href="http://thptchuyen.sogddtsonla.edu.vn/"><i class="fa fa-map-marker-alt me-2"></i> Đường Lê Duẩn, phường Chiềng Sinh, thành phố Sơn La</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> daothevinh2009sl@gmail.com</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> daothevinh2009sl@gmail.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> 0363457216</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> 0363457216</a>
+                            <div class="footer-btn d-flex align-items-center">
+                                <a class="btn btn-secondary btn-md-square me-2" href="https://www.facebook.com/aovinh.962989"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-secondary btn-md-square me-2" href=""><i class="fab fa-twitter text-white"></i></a>
+                                <a class="btn btn-secondary btn-md-square me-2" href=""><i class="fab fa-instagram text-white"></i></a>
+                                <a class="btn btn-secondary btn-md-square me-0" href=""><i class="fab fa-linkedin-in text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+                <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Tuyển sinh mới</a>, Đã đăng kí bản quyền.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
